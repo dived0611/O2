@@ -9,7 +9,7 @@ function OurSpecialities() {
       name: "Steak",
       categorie: 'Steak',
       image: "https://www.shutterstock.com/image-photo/beef-steak-medium-rare-on-600nw-2444442355.jpg",
-      description: 'Juicy and tender steak cooked to perfection, served with a side of seasonal vegetables.Juicy and tender steak cooked to perfection, served with a side of seasonal vegetables.',
+      description: 'This succulent steak is a culinary delight, offering a rich and flavorful experience.',
       price: '40'
     },
     {
@@ -17,7 +17,7 @@ function OurSpecialities() {
       name: "Rice Bowl",
       categorie: 'With Rice',
       image: "https://img.freepik.com/premium-photo/cooked-rice-with-steam-black-bowl-dark-background-hot-cooked-rice-bowl-selective-focus-hot-food-healthy_39810-125.jpg",
-      description: 'A Juicy and tender steak cooked to perfection, served with a side of seasonal vegetables. delicious rice bowl topped with fresh herbs and a savory sauce.',
+      description: 'Delicious rice bowl topped with fresh herbs and a savory sauce.',
       price: '20'
     },
     {
@@ -25,7 +25,7 @@ function OurSpecialities() {
       name: "Sushi",
       categorie: 'Homestyle sushi',
       image: "https://i.pinimg.com/1200x/8f/6d/ce/8f6dceb5d77f97e2b939684ac960fe09.jpg",
-      description: 'Freshly prepared sushi with a variety of fillings and flavors.',
+      description: 'Delicious and fresh sushi with a variety of fillings and flavors, made with love and care by our sushi chef.',
       price: '30'
     }
   ];

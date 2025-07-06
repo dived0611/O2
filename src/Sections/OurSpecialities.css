@@ -1,16 +1,15 @@
 /* Text styles */
 .p_Reality {
     font-family: 'Dancing Script', cursive;
-    font-size: 18px;
+    font-size: 19.8px;
     text-align: center;
 }
 
 .title {
-    font-size: 30px;
+    font-size: 40px;
     color: #fbd886;
     font-weight: bold;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
 }
 
 .subtitle {
@@ -74,7 +73,7 @@
 
 .button_filter {
     padding: 10px;
-
+    font-size: 15px;
     cursor: pointer;
     transition: all 500ms ease-in-out;
     font-family: 'Courier New', Courier, monospace;
@@ -88,6 +87,7 @@
 .button_filter.selected {
     background-color: gold;
     color: black;
+
 }
 
 /* Responsive design */
@@ -110,4 +110,7 @@
     .food-item:nth-child(even) .food-content {
         flex-direction: row-reverse;
     }
+}
+.our-specialties{
+    margin-top: 100px;
 }
