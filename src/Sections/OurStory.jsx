@@ -5,7 +5,7 @@ export default function OurStory() {
     <div className="our-story-page">
       <div className="background-texture"></div>
 
-      <div className="container">
+      <div className="container-our-story ">
         {/* Header Section */}
         <div className="story-header">
           <p className="story-subtitle">About Us</p>
@@ -36,7 +36,7 @@ export default function OurStory() {
 
           {/* Text Section */}
           <div className="story-text">
-            <div className="text-content">
+            <div className="text-content-our-story">
               <p className="text-paragraph">
                 At the heart of every unforgettable evening is a shared meal — crafted with passion, served with elegance, and remembered forever.
 
