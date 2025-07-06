@@ -8,6 +8,8 @@ html,body{
   color: white;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  overscroll-behavior: none;
+
 }
 body::-webkit-scrollbar {
   display: none;
@@ -24,3 +26,12 @@ img {
   
 }
 
+/* Optional: Add to your root CSS variables */
+:root {
+  --cursor-color: #ffffff;
+}
+
+/* For dark mode support */
+[data-theme="dark"] {
+  --cursor-color: #000000;
+}
