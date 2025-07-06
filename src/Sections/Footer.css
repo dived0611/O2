@@ -1,0 +1,67 @@
+.footer-background {
+    background: url('../assets/bg2.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .footer-overlay {
+    background: rgba(20, 20, 20, 0.7);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-content {
+    color: #f5d47a;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .footer-content h1 {
+    font-size: 2.5 rem;
+    font-family: 'Georgia', serif;
+    margin-bottom: 1 rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  }
+  
+  .footer-info {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .footer-info i {
+    margin-right: 8px;
+    color: #f5d47a;
+  }
+  
+  .footer-button {
+    background: #f5d47a;
+    color: #222;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-logo {
+    margin: 1.5rem 0;
+    /* Add your logo styling or image here */
+  }
+  
+  .footer-socials a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footer-socials a:hover {
+    text-decoration: underline;
+  }
