@@ -1,0 +1,113 @@
+/* Text styles */
+.p_Reality {
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    color: #fbd886;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    
+    margin: 0 auto;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* Food list layout */
+.food-list {
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.food-item {
+    margin-bottom: 40px;
+}
+
+.food-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.text-content h3 {
+    color: #fbd886;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.text-content .description {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text-content .price {
+    color: #fbd886;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Filter buttons */
+.buttonContainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button_filter {
+    padding: 10px;
+
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 100px;
+}
+
+.button_filter:hover, .button_filter:focus {
+    background-color: rgb(102, 102, 102);
+}
+
+.button_filter.selected {
+    background-color: gold;
+    color: black;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .food-content {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .image-container {
+        width: 50%;
+    }
+    
+    .text-content {
+        width: 50%;
+        padding: 0 20px;
+    }
+    
+    /* Alternate layout for even items */
+    .food-item:nth-child(even) .food-content {
+        flex-direction: row-reverse;
+    }
+}

@@ -2,13 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import DiningEvents from './Sections/DinerEvent'
-
+import OurSpecialities from './Sections/OurSpecialities';
+import Navbare from './components/Navbare';
+import DiningEvents from './Sections/DinerEvent';
 function App() {
 
   return (
     <>
-     <DiningEvents />
+    <Navbare/>
+     <OurSpecialities/>
+     <DiningEvents/>
     </>
   )
 }
