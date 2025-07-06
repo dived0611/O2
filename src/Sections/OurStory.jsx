@@ -1,4 +1,7 @@
 import "./OurStory.css"
+import image1 from "../assets/images/Restaurant-Kitchen.jpg"
+import image2 from "../assets/images/kitechen2.jpg"
+import image3 from "../assets/images/kitchen3.jpg"
 
 export default function OurStory() {
   return (
@@ -23,13 +26,13 @@ export default function OurStory() {
           <div className="story-images">
             <div className="image-grid">
               <div className="image-item large">
-                <img src="/images/Restaurant-Kitchen.jpg" alt="Restaurant kitchen equipment" />
+                <img src={image1} alt="Restaurant kitchen equipment" />
               </div>
               <div className="image-item medium">
-                <img src="/images/kitechen2.jpg" alt="Chef preparing food" />
+                <img src={image2} alt="Chef preparing food" />
               </div>
               <div className="image-item medium">
-                <img src="/images/kitchen3.jpg" alt="Chef cooking with fire" />
+                <img src={image3} alt="Chef cooking with fire" />
               </div>
             </div>
           </div>

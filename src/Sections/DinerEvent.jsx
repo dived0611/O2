@@ -1,38 +1,41 @@
 import { useState } from "react"
 import "./DinerEvent.css"
-
+import image1 from "../assets/images/fine-dining.jpg"
+import image2 from "../assets/images/gold-dining.jpg"
+import image3 from "../assets/images/table-dining.jpg"
+import image4 from "../assets/images/royalty-dining.jpg"
 export default function DiningEvents() {
   const [hoveredCard, setHoveredCard] = useState(null)
 
-  const events = [
+const events = [
     {
-      id: 1,
-      price: "$500",
-      title: "Fine Dining",
-      subtitle: "Bottle of Champagne",
-      description: "Fine Gourmet Meal For 2+\nRoyal Dessert",
-      image: "/images/fine-dining.jpg",
-      position: "justify-start",
+        id: 1,
+        price: "$500",
+        title: "Fine Dining",
+        subtitle: "Bottle of Champagne",
+        description: "Fine Gourmet Meal For 2+\nRoyal Dessert",
+        image: image1,
+        position: "justify-start",
     },
     {
-      id: 2,
-      price: "$1000",
-      title: "Gold Dining",
-      subtitle: "Bottle of Champagne",
-      description: "Exquisite 5-Course Menu\nRoyal Dessert",
-      image: "/images/gold-dining.jpg",
-      position: "justify-end",
+        id: 2,
+        price: "$1000",
+        title: "Gold Dining",
+        subtitle: "Bottle of Champagne",
+        description: "Exquisite 5-Course Menu\nRoyal Dessert",
+        image: image2,
+        position: "justify-end",
     },
     {
-      id: 3,
-      price: "$1500",
-      title: "Royalty Dining",
-      subtitle: "Premium Experience",
-      description: "Special Menu Built For 2+\nRoyal Dessert",
-      image: "/images/table-dining.jpg",
-      position: "justify-start",
+        id: 3,
+        price: "$1500",
+        title: "Royalty Dining",
+        subtitle: "Premium Experience",
+        description: "Special Menu Built For 2+\nRoyal Dessert",
+        image: image3,
+        position: "justify-start",
     },
-  ]
+]
 
   return (
     <div>
@@ -92,7 +95,7 @@ export default function DiningEvents() {
         <div className="featured-dish">
           <div className="featured-card">
             <div className="featured-image">
-              <img src="/images/royalty-dining.jpg" alt="Gourmet Salmon Dish" />
+              <img src={image4} alt="Gourmet Salmon Dish" />
               <div className="featured-overlay"></div>
             </div>
           </div>
