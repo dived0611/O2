@@ -22,6 +22,7 @@ function App() {
      <DiningEvents/>
      <OurStory/>
     <Footer/>
+
     </>
   )
 }
