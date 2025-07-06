@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+.valentine-text {
+  font-family: "Great Vibes", cursive; /* Romantic cursive font */
+  font-size: 1.2rem; /* Adjust size as needed */
+  color: #ffffff; /* Valentine red */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    /* Subtle shadow */ 0 0 10px rgba(230, 57, 70, 0.5); /* Glow effect */
+  letter-spacing: 2px; /* Slight spacing for elegance */
+  text-align: center; /* Center alignment */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #1E1E1E;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.background-texture {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+  padding-top: 4rem;
+  /* space-y: 2rem; */
+}
+
+.header-subtitle {
+  color: #fbbf24;
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-family: "Great Vibes", cursive;
+  /* font-size: 1.2rem; */
+
+}
+
+.header-title {
+  font-weight: 300;
+  color: #fcd34d;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  font-family: "Playfair Display", serif; /* Elegant serif font */
+  font-size: 2.5rem; /* Adjust size as needed /
+  color: #F2D784; / Deep blue for contrast */
+}
+
+.header-description {
+  font-size: 1.125rem;
+  color: #cbd5e1;
+  max-width: 36rem;
+  margin: 0 auto 3rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+@media (min-width: 640px) {
+  .buttons-container {
+    flex-direction: row;
+  }
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: #d97706;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #b45309;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fbbf24;
+  border: 1px solid #d97706;
+}
+
+.btn-outline:hover {
+  background: rgba(217, 119, 6, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Events Section */
+.events-container {
+  margin-bottom: 5rem;
+}
+
+.event-row {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.event-row.justify-start {
+  justify-content: flex-start;
+}
+
+.event-row.justify-end {
+  justify-content: flex-end;
+}
+
+/* @media (min-width: 768px) {
+  .event-row.justify-start {
+    padding-right: 5rem;
+  }
+
+  .event-row.justify-end {
+    padding-left: 5rem;
+  }
+} */
+
+.event-card {
+  position: relative; /* ✅ Ajouté */
+  width: 100%;
+  backdrop-filter: blur(8px);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.event-card:hover {
+  /* border-color: rgba(217, 119, 6, 0.4); */
+  transform: scale(1);
+box-shadow: 0 8px 24px -8px rgba(217, 119, 6, 0.08);
+}
+
+.event-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .event-content {
+    flex-direction: row;
+  }
+}
+
+.event-text {
+  /* flex: 1 1 40%;      le texte prend le reste, mini 40 % */
+  padding: 2rem;
+  position: relative; /* pour rester au-dessus du ::after, si tu utilises un dégradé */
+  z-index: 2;
+
+}
+
+.event-price {
+  font-size: clamp(3rem, 6vw, 4rem);
+  font-weight: 300;
+  color: #fbbf24;
+  transition: color 0.3s ease;
+  margin-bottom: 0.75rem;
+  font-family: "Playfair Display", serif;
+}
+
+.event-card:hover .event-price {
+  color: #fcd34d;
+}
+
+.event-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #fcd34d;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  font-family: "Playfair Display", serif;
+  margin-left: 8rem;
+  
+}
+
+.event-subtitle {
+  color: rgba(251, 191, 36, 0.8);
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  margin-left: 8rem;
+}
+
+.event-description {
+  color: #cbd5e1;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.6;
+  white-space: pre-line;
+  margin-left: 8rem;
+}
+
+.event-image {
+  width: 100%;
+  height: 24rem;
+  flex: 1 1 50%;
+  position: relative; /* ✅ remplacé "absolute" */
+  overflow: hidden;
+}
+
+
+
+@media (min-width: 768px) {
+  .event-image {
+    height: 22rem;          /* ou 24rem selon l’effet désiré */
+  }
+}
+
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: transform .7s ease;
+}
+
+.event-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;                  /* couvre toute la photo */
+    pointer-events: none;      /* l’utilisateur peut toujours cliquer */
+    background: linear-gradient(
+            to right,
+            #1E1E1E 0%,   /* couleur de fond très foncée, presque opaque */
+            rgba(30,30,30,0.2) 60%,   /* …jusqu’à transparent */
+            rgba(30,30,30,0) 80%
+    );
+    transition: opacity .3s ease;
+    z-index: 1;                /* au-dessus de l’image, mais sous le texte */
+}
+/* Dégradé vers la gauche uniquement pour Gold Dining */
+/* Gradient to left for event 2 */
+.event-image.gradient-left::after {
+  background: linear-gradient(
+    to left,
+            #1E1E1E 0%,   /* couleur de fond très foncée, presque opaque */
+            rgba(30,30,30,0.2) 60%,   /* …jusqu’à transparent */
+            rgba(30,30,30,0) 80%
+  );
+}
+
+/* Inverse le sens image / texte pour Gold Dining */
+.event-content.reverse-layout {
+  flex-direction: row-reverse;
+}
+
+
+.event-image-overlay {
+  
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.3));
+}
+
+.event-image-hover-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.event-card:hover .event-image-hover-overlay {
+  opacity: 1;
+}
+
+/* Featured Dish Section */
+.featured-dish {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-card {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(217, 119, 6, 0.2);
+  overflow: hidden;
+  transition: all 0.5s ease;
+    width: 100%;
+  cursor: pointer;
+}
+
+.featured-card:hover {
+  border-color: rgba(217, 119, 6, 0.4);
+}
+
+.featured-image {
+    width: 100%;
+  position: relative;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+  filter: brightness(0.9);
+}
+
+
+
+.featured-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 3rem;
+  }
+
+  .event-row {
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+
+  .event-card {
+    max-width: 100%;
+  }
+
+  .event-price {
+    font-size: 3rem;
+  }
+}
