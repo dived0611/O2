@@ -13,8 +13,8 @@ function App() {
     <>
     <Navbare/>
     <Hero/>
-     <OurSpecialities/>
-     <DiningEvents/>
+     {/* <OurSpecialities/>
+     <DiningEvents/> */}
      <Footer />
      <OurStory/>
     </>
