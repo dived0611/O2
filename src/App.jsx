@@ -14,7 +14,7 @@ function App() {
       <Navbare />
       <Hero />
       <TodaySpecial />
-      <OurSpecialities />
+      {/* <OurSpecialities /> */}
       <DiningEvents />
       <OurStory />
       <Footer />
