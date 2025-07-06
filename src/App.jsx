@@ -7,15 +7,20 @@ import Navbare from './components/Navbare';
 import DiningEvents from './Sections/DinerEvent';
 import Hero from './Sections/Hero'
 import Footer from './Sections/Footer'
+import OurStory from './Sections/OurStory';
+import TodaySpecial from './Sections/TodaySpecial';
 function App() {
 
   return (
     <>
     <Navbare/>
     <Hero/>
+    <TodaySpecial/>
     <OurSpecialities/>
-     <DiningEvents/>
+    <DiningEvents/>
+    <OurStory/>
     <Footer/>
+
     </>
   )
 }
